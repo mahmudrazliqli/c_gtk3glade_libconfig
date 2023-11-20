@@ -65,7 +65,6 @@ Author: MahmudRazliqli
             <property name="can-focus">False</property>
             <property name="vexpand">True</property>
             <property name="row-spacing">8</property>
-            <property name="row-homogeneous">True</property>
             <property name="column-homogeneous">True</property>
             <child>
               <object class="GtkButton" id="button_delete_conf">
@@ -73,6 +72,7 @@ Author: MahmudRazliqli
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
+                <property name="valign">end</property>
                 <signal name="clicked" handler="on_button_delete_conf_clicked" swapped="no"/>
               </object>
               <packing>
@@ -86,6 +86,7 @@ Author: MahmudRazliqli
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
+                <property name="valign">end</property>
                 <signal name="clicked" handler="on_button_create_conf_clicked" swapped="no"/>
               </object>
               <packing>
@@ -99,6 +100,7 @@ Author: MahmudRazliqli
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
+                <property name="valign">start</property>
                 <signal name="clicked" handler="on_button_read_all_clicked" swapped="no"/>
               </object>
               <packing>
@@ -112,21 +114,12 @@ Author: MahmudRazliqli
                 <property name="visible">True</property>
                 <property name="can-focus">True</property>
                 <property name="receives-default">True</property>
+                <property name="valign">start</property>
                 <signal name="clicked" handler="on_button_write_all_clicked" swapped="no"/>
               </object>
               <packing>
                 <property name="left-attach">0</property>
                 <property name="top-attach">2</property>
-              </packing>
-            </child>
-            <child>
-              <object class="GtkLabel">
-                <property name="visible">True</property>
-                <property name="can-focus">False</property>
-              </object>
-              <packing>
-                <property name="left-attach">0</property>
-                <property name="top-attach">0</property>
               </packing>
             </child>
             <child>
@@ -179,6 +172,17 @@ Author: MahmudRazliqli
                 <property name="top-attach">7</property>
               </packing>
             </child>
+            <child>
+              <object class="GtkSeparator">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="valign">start</property>
+              </object>
+              <packing>
+                <property name="left-attach">0</property>
+                <property name="top-attach">0</property>
+              </packing>
+            </child>
           </object>
           <packing>
             <property name="left-attach">3</property>
@@ -189,8 +193,6 @@ Author: MahmudRazliqli
           <object class="GtkEntry" id="entry1">
             <property name="visible">True</property>
             <property name="can-focus">True</property>
-            <property name="hexpand">False</property>
-            <property name="vexpand">False</property>
             <property name="max-length">6</property>
             <property name="text" translatable="yes">123</property>
             <property name="input-purpose">number</property>
@@ -281,6 +283,7 @@ Author: MahmudRazliqli
             <property name="visible">True</property>
             <property name="can-focus">True</property>
             <property name="receives-default">True</property>
+            <property name="valign">end</property>
             <signal name="clicked" handler="on_button_clear1_clicked" swapped="no"/>
           </object>
           <packing>
