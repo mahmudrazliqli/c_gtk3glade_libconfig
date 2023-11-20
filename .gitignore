@@ -1,0 +1,5 @@
+main
+main.exe
+*.o
+c_gtk3glade_libconfig.7z
+c_gtk3glade_libconfig.zip
